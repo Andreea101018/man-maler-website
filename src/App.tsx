@@ -38,9 +38,10 @@ const App = () => (
                 <Route path="/referencer" element={<Projects />} />
                 <Route path="/om-os" element={<About />} />
                 <Route path="/kontakt" element={<Contact />} />
-                <Route path="/terms" element={<Terms />} />
-                <Route path="/privacy" element={<Privacy />} />
+                <Route path="/vilkar" element={<Terms />} />
+                <Route path="/privatliv" element={<Privacy />} />
                 <Route path="/cookies" element={<Cookies />} />
+
 
                 <Route path="*" element={<NotFound />} />
               </Routes>

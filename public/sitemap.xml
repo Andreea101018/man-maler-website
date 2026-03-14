@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://manmaler.dk/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <priority>1.0</priority>
-  </url>
+<url>
+  <loc>https://manmaler.dk/</loc>
+</url>
 
-  <url>
-    <loc>https://manmaler.dk/ydelser</loc>
-    <lastmod>2026-03-14</lastmod>
-    <priority>0.9</priority>
-  </url>
+<url>
+  <loc>https://manmaler.dk/ydelser</loc>
+</url>
 
-  <url>
-    <loc>https://manmaler.dk/referencer</loc>
-    <lastmod>2026-03-14</lastmod>
-    <priority>0.9</priority>
-  </url>
+<url>
+  <loc>https://manmaler.dk/referencer</loc>
+</url>
 
-  <url>
-    <loc>https://manmaler.dk/om-os</loc>
-    <lastmod>2026-03-14</lastmod>
-    <priority>0.8</priority>
-  </url>
+<url>
+  <loc>https://manmaler.dk/om-os</loc>
+</url>
 
-  <url>
-    <loc>https://manmaler.dk/kontakt</loc>
-    <lastmod>2026-03-14</lastmod>
-    <priority>0.9</priority>
-  </url>
+<url>
+  <loc>https://manmaler.dk/kontakt</loc>
+</url>
+
+<url>
+  <loc>https://manmaler.dk/vilkar</loc>
+</url>
+
+<url>
+  <loc>https://manmaler.dk/privatliv</loc>
+</url>
+
+<url>
+  <loc>https://manmaler.dk/cookies</loc>
+</url>
 
 </urlset>

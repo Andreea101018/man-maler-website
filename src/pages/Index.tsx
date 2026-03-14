@@ -346,36 +346,43 @@ useEffect(() => {
   </div>
 </section>
 
-      {/* TESTIMONIALS */}
-      <section className="py-24 px-6 gradient-warm">
-        <div className="max-w-5xl mx-auto text-center">
-          <AnimatedSection>
-            <h2 className="text-3xl font-display font-semibold mb-12 text-foreground">
-              {t("testimonials.title")}
-            </h2>
-          </AnimatedSection>
+{/* TESTIMONIALS */}
+<section className="py-24 px-6 gradient-warm">
+  <div className="max-w-5xl mx-auto text-center">
+    <AnimatedSection>
+      <h2 className="text-3xl font-display font-semibold mb-12 text-foreground">
+        {t("testimonials.title")}
+      </h2>
+    </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {["1", "2"].map((i) => (
-              <AnimatedSection key={i} delay={Number(i) * 0.1}>
-                <div className="bg-card p-8 rounded-2xl shadow-sm border border-border">
-                  <div className="flex gap-1 mb-4 justify-center">
-                    {[...Array(5)].map((_, s) => (
-                      <Star key={s} size={16} className="text-primary fill-primary" />
-                    ))}
-                  </div>
-                  <p className="italic mb-4 text-foreground leading-relaxed">
-                    "{t(`testimonials.${i}.text` as any)}"
-                  </p>
-                  <p className="font-semibold text-primary">
-                    — {t(`testimonials.${i}.author` as any)}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
+    <div className="grid md:grid-cols-2 gap-8 items-stretch">
+      {["1", "2"].map((i) => (
+        <AnimatedSection key={i} delay={Number(i) * 0.1}>
+          <div className="bg-card p-8 rounded-2xl shadow-sm border border-border h-full flex flex-col">
+            
+            {/* Stars */}
+            <div className="flex gap-1 mb-4 justify-center">
+              {[...Array(5)].map((_, s) => (
+                <Star key={s} size={16} className="text-primary fill-primary" />
+              ))}
+            </div>
+
+            {/* Text */}
+            <p className="italic mb-6 text-foreground leading-relaxed flex-grow">
+              "{t(`testimonials.${i}.text` as any)}"
+            </p>
+
+            {/* Author */}
+            <p className="font-semibold text-primary mt-auto">
+              — {t(`testimonials.${i}.author` as any)}
+            </p>
+
           </div>
-        </div>
-      </section>
+        </AnimatedSection>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section className="py-28 px-6 bg-primary">

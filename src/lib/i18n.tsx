@@ -112,6 +112,7 @@ const translations = {
 
 
     "testimonials.1.author": "Mette H., København",
+     "testimonials.2.author": "Lars P., Roskilde",
     "testimonials.2.text": "Vi fik malet hele facaden på vores villa, og resultatet er virkelig flot. Arbejdet blev udført professionelt, og kommunikationen var nem hele vejen igennem. Kan varmt anbefales.",
 
     "why.title": "Hvorfor Vælge MAN MALER?",

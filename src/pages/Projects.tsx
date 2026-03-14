@@ -178,14 +178,15 @@ const galleryImages = allImagesFromFolder.filter((img) => {
               <AnimatedSection key={video.key} delay={index * 0.15}>
                 <div className="rounded-2xl overflow-hidden shadow-lg border border-border bg-card group">
                   <div className="relative aspect-[9/16] bg-muted">
-                    <video
-                      src={video.src}
-                      className="w-full h-full object-cover"
-                      controls
-                      preload="metadata"
-                      playsInline
-                      muted
-                    />
+<video
+  src={video.src}
+  className="w-full h-full object-cover"
+  controls
+  preload="auto"
+  playsInline
+  muted
+  autoPlay
+/>
                   </div>
                   <div className="p-4 text-center">
                     <h3 className="font-display font-semibold text-lg text-card-foreground">

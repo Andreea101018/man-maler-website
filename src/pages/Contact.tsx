@@ -291,7 +291,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </p>
                 <div className="flex gap-3">
                   {[
-                    { icon: Instagram, href: "https://www.instagram.com/malerhuset.dk/?hl=ro", label: "Instagram" },
+                    { icon: Instagram, href: "https://www.instagram.com/manmaler.dk/", label: "Instagram" },
                     { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61579050129336", label: "Facebook" },
                     { icon: TikTokIcon, href: "https://www.tiktok.com/@malerhusetdk", label: "TikTok" },
                   ].map((social) => {

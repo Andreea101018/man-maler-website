@@ -181,6 +181,9 @@ const translations = {
     "contact.info.address": "Energivej 27, 2750 Ballerup",
     "contact.info.hours": "Åbningstider",
     "contact.info.hours.weekdays": "Man-Fre: 08:00 – 16:00",
+    "contact.success.title": "Tak for din henvendelse!",
+"contact.success.description": "Vi har modtaget din besked og vender typisk tilbage inden for få timer.",
+"contact.success.button": "Send en ny besked",
 
     "footer.company": "MANMALER",
     "footer.desc": "Professionel maler i København, Ballerup og på hele Sjælland. Kvalitetsmalerarbejde til private og erhverv.",
@@ -450,6 +453,9 @@ const translations = {
     "contact.info.address": "Energivej 27, 2750 Ballerup",
     "contact.info.hours": "Opening Hours",
     "contact.info.hours.weekdays": "Mon-Fri: 08:00 – 16:00",
+    "contact.success.title": "Thank you for your message!",
+"contact.success.description": "Your inquiry has been received. We usually reply within a few hours.",
+"contact.success.button": "Send another message",
 
     "footer.company": "MANMALER",
     "footer.desc": "Professional painter in Copenhagen, Ballerup and across Zealand. Quality painting for private and commercial clients.",

@@ -25,7 +25,7 @@ export default function Contact() {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [sending, setSending] = useState(false);
-
+const [sent, setSent] = useState(false);
   const serviceOptions = SERVICE_KEYS.map((key) => ({
     key,
     label: t(key as any),
@@ -71,7 +71,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       throw new Error("Failed to send email");
     }
 
-    toast.success(t("contact.success" as any));
+    setSent(true);
 
     setForm({
       name: "",
@@ -118,11 +118,39 @@ const handleSubmit = async (e: React.FormEvent) => {
           {/* FORM */}
           <AnimatedSection>
             <div className="bg-card p-10 rounded-3xl shadow-xl border border-border">
-              <h2 className="text-2xl font-display font-semibold mb-6 text-card-foreground">
-                {t("contact.form.title" as any)}
-              </h2>
+             <h2 className="text-2xl font-display font-semibold mb-6 text-card-foreground">
+  {t("contact.form.title" as any)}
+</h2>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+{sent ? (
+  <AnimatedSection>
+    <div className="text-center py-10 flex flex-col items-center">
+
+      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+        <CheckCircle size={32} className="text-primary" />
+      </div>
+
+      <h3 className="text-xl font-semibold text-foreground mb-2">
+        {t("contact.success.title" as any)}
+      </h3>
+
+      <p className="text-muted-foreground max-w-sm mb-6">
+        {t("contact.success.description" as any)}
+      </p>
+
+      <button
+        type="button"
+        onClick={() => setSent(false)}
+        className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:scale-[1.02] hover:shadow-md transition"
+      >
+        {t("contact.success.button" as any)}
+      </button>
+
+    </div>
+  </AnimatedSection>
+) : (
+
+<form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2 text-foreground">{t("contact.name")}</label>
                   <input
@@ -250,12 +278,16 @@ const handleSubmit = async (e: React.FormEvent) => {
                   {sending && <Loader2 size={18} className="animate-spin" />}
                   {t("contact.send")}
                 </button>
-              </form>
+</form>
 
-              <div className="mt-6 text-sm text-muted-foreground flex items-center gap-2">
-                <CheckCircle size={16} className="text-primary" />
-                {t("contact.response.time" as any)}
-              </div>
+)}
+
+{!sent && (
+  <div className="mt-6 text-sm text-muted-foreground flex items-center gap-2">
+    <CheckCircle size={16} className="text-primary" />
+    {t("contact.response.time" as any)}
+  </div>
+)}
             </div>
           </AnimatedSection>
 

@@ -307,10 +307,9 @@ return (
   src={video.src}
   className="w-full h-full object-cover"
   controls
-  preload="auto"
+  preload="metadata"
   playsInline
   muted
-  autoPlay
 />
                   </div>
                   <div className="p-4 text-center">

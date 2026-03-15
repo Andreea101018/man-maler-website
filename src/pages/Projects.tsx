@@ -18,6 +18,7 @@ import video3 from "@/assets/projects/video3.mp4";
 import video4 from "@/assets/projects/video5.mp4";
 import video5 from "@/assets/projects/video6.mp4";
 import video6 from "@/assets/projects/video2.mp4";
+import { Helmet } from "react-helmet-async";
 
 export default function Projects() {
   const { t } = useI18n();
@@ -100,6 +101,52 @@ const galleryImages = allImagesFromFolder.filter((img) => {
 }, [selectedIndex]);
 
   return (
+    <>
+<Helmet>
+
+<title>Maler Projekter | Se Vores Malerarbejde | MAN MALER</title>
+
+<meta
+name="description"
+content="Se vores malerprojekter i København, Ballerup og på Sjælland. Professionelt malerarbejde, facademaling, indendørs maling og renovering for boliger og virksomheder."
+/>
+
+<meta
+name="keywords"
+content="maler projekter, maler referencer, maler arbejde københavn, facademaling projekter, indendørs maling før efter, maler sjælland"
+/>
+
+<meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="https://manmaler.dk/referencer" />
+
+{/* OpenGraph */}
+
+<meta property="og:title" content="Maler Projekter | MAN MALER" />
+
+<meta
+property="og:description"
+content="Se vores tidligere malerprojekter i København og på Sjælland. Professionelt malerarbejde for private og virksomheder."
+/>
+
+<meta property="og:type" content="website" />
+
+<meta property="og:url" content="https://manmaler.dk/referencer" />
+
+<meta property="og:image" content="https://manmaler.dk/og-projects.jpg" />
+
+{/* Twitter */}
+
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:title" content="Maler Projekter | MAN MALER" />
+
+<meta
+name="twitter:description"
+content="Se vores professionelle malerprojekter og referencer."
+/>
+
+</Helmet>
     <div>
       {/* HERO */}
       <section className="relative py-28 px-6 text-center overflow-hidden">
@@ -284,5 +331,6 @@ const galleryImages = allImagesFromFolder.filter((img) => {
         </AnimatedSection>
       </section>
     </div>
-  );
+  </>
+);
 }

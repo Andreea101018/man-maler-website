@@ -13,6 +13,7 @@ import video1 from "@/assets/projects/video1.mp4";
 import video2 from "@/assets/projects/video3.mp4";
 import video3 from "@/assets/projects/video5.mp4";
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 
 export default function Index() {
@@ -76,16 +77,36 @@ useEffect(() => {
 
   return () => window.removeEventListener("keydown", handleKey);
 }, [selectedIndex]);
-  return (
+return (
+  <>
+    <Helmet>
+      <title>Maler i København | Professionel Maler på Sjælland | MAN MALER</title>
+
+      <meta
+        name="description"
+        content="Professionel maler i København, Ballerup og Roskilde. Vi tilbyder indendørs maling, facademaling, renovering og erhvervsmaling på hele Sjælland."
+      />
+
+      <meta
+        name="keywords"
+        content="maler københavn, maler sjælland, maler ballerup, maler roskilde, facademaling, indendørs maling"
+      />
+
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://manmaler.dk/" />
+    </Helmet>
+
     <main className="flex flex-col">
       {/* HERO */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={heroImg}
-            alt="Professionel malerarbejde"
-            className="w-full h-full object-cover"
-          />
+<img
+  src={heroImg}
+  alt="Professionel malerarbejde"
+  loading="eager"
+  fetchPriority="high"
+  className="w-full h-full object-cover"
+/>
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
         </div>
 
@@ -384,7 +405,109 @@ useEffect(() => {
     </div>
   </div>
 </section>
+{/* SEO SERVICES SECTION */}
+<section className="py-24 px-6 bg-background border-t border-border">
+  <div className="max-w-6xl mx-auto">
 
+    {/* TITLE + AREA TEXT */}
+    <AnimatedSection>
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4 text-foreground">
+          {t("seo.serviceAreas.title")}
+        </h2>
+
+        <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          {t("seo.serviceAreas.text")}
+        </p>
+      </div>
+    </AnimatedSection>
+
+    {/* SERVICES TITLE */}
+    <AnimatedSection>
+      <h3 className="text-2xl font-semibold text-center mb-10 text-foreground">
+        {t("seo.services.title")}
+      </h3>
+    </AnimatedSection>
+
+    {/* SERVICES GRID */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      {/* INTERIOR */}
+      <AnimatedSection delay={0.05}>
+        <div className="p-6 rounded-xl border border-border bg-card hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+
+          <div className="flex items-center gap-3 mb-4">
+            <Paintbrush className="text-primary" size={22} />
+            <h4 className="font-semibold text-lg text-card-foreground">
+              {t("seo.services.interiorTitle")}
+            </h4>
+          </div>
+
+          <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
+            {t("seo.services.interior")}
+          </p>
+
+        </div>
+      </AnimatedSection>
+
+      {/* EXTERIOR */}
+      <AnimatedSection delay={0.1}>
+        <div className="p-6 rounded-xl border border-border bg-card hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+
+          <div className="flex items-center gap-3 mb-4">
+            <Home className="text-primary" size={22} />
+            <h4 className="font-semibold text-lg text-card-foreground">
+              {t("seo.services.exteriorTitle")}
+            </h4>
+          </div>
+
+          <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
+            {t("seo.services.exterior")}
+          </p>
+
+        </div>
+      </AnimatedSection>
+
+      {/* RENOVATION */}
+      <AnimatedSection delay={0.15}>
+        <div className="p-6 rounded-xl border border-border bg-card hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+
+          <div className="flex items-center gap-3 mb-4">
+            <Wrench className="text-primary" size={22} />
+            <h4 className="font-semibold text-lg text-card-foreground">
+              {t("seo.services.renovationTitle")}
+            </h4>
+          </div>
+
+          <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
+            {t("seo.services.renovation")}
+          </p>
+
+        </div>
+      </AnimatedSection>
+
+      {/* COMMERCIAL */}
+      <AnimatedSection delay={0.2}>
+        <div className="p-6 rounded-xl border border-border bg-card hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+
+          <div className="flex items-center gap-3 mb-4">
+            <Building2 className="text-primary" size={22} />
+            <h4 className="font-semibold text-lg text-card-foreground">
+              {t("seo.services.commercialTitle")}
+            </h4>
+          </div>
+
+          <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
+            {t("seo.services.commercial")}
+          </p>
+
+        </div>
+      </AnimatedSection>
+
+    </div>
+
+  </div>
+</section>
       {/* CTA */}
       <section className="py-28 px-6 bg-primary">
         <AnimatedSection>
@@ -405,5 +528,6 @@ useEffect(() => {
         </AnimatedSection>
       </section>
     </main>
-  );
+  </>
+);
 }

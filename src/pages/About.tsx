@@ -5,6 +5,7 @@ import { CheckCircle, MapPin } from "lucide-react";
 import ab1 from "@/assets/ab1.png";
 import ab2 from "@/assets/ab2.png";
 import ab3 from "@/assets/ab3.png";
+import { Helmet } from "react-helmet-async";
 
 import foundersImg from "@/assets/vicion4.png";
 
@@ -22,7 +23,52 @@ export default function About() {
     "Glostrup", "Hvidovre", "Albertslund", "Ishøj", "Brøndby"
   ];
   return (
-    <>
+<>
+<Helmet>
+
+<title>Om MAN MALER | Professionelt Malerfirma i København</title>
+
+<meta
+name="description"
+content="Læs om MAN MALER – et professionelt malerfirma i København og på Sjælland. Vi leverer kvalitetsmalerarbejde med fokus på præcision, pålidelighed og tilfredse kunder."
+/>
+
+<meta
+name="keywords"
+content="malerfirma københavn, om malerfirma, professionel maler sjælland, lokalt malerfirma, maler ballerup, maler roskilde"
+/>
+
+<meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="https://manmaler.dk/om-os" />
+
+{/* OpenGraph */}
+
+<meta property="og:title" content="Om MAN MALER | Professionelt Malerfirma" />
+
+<meta
+property="og:description"
+content="Lær mere om MAN MALER – et erfarent malerfirma i København og på Sjælland med fokus på kvalitet og tilfredse kunder."
+/>
+
+<meta property="og:type" content="website" />
+
+<meta property="og:url" content="https://manmaler.dk/om-os" />
+
+<meta property="og:image" content="https://manmaler.dk/og-about.jpg" />
+
+{/* Twitter */}
+
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:title" content="Om MAN MALER | Professionelt Malerfirma" />
+
+<meta
+name="twitter:description"
+content="Læs om vores malerfirma og vores værdier. Professionelt malerarbejde i København og på Sjælland."
+/>
+
+</Helmet>
       {/* HERO */}
       <section className="relative py-28 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 gradient-warm" />

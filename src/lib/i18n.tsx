@@ -11,18 +11,18 @@ const translations = {
     "nav.contact": "Kontakt",
     "nav.cta": "Få et tilbud",
 
-    "hero.title": "Professionel Maler på Sjælland",
-    "hero.subtitle": "Kvalitetsbevidst malerarbejde til private og erhverv i København, Ballerup, Roskilde og hele Sjælland. Indendørs og udendørs maling udført med præcision og omhu.",
+    "hero.title": "Professionel Maler i København og på Sjælland",
+    "hero.subtitle": "Professionelt malerfirma i København, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge og hele Sjælland. Vi udfører indendørs maling, udendørs maling, facademaling, spartling og renovering af lejligheder, huse og erhvervsejendomme.",
     "hero.cta": "Få et gratis tilbud",
     "hero.services": "Se vores ydelser",
 
-    "services.title": "Vores Ydelser",
+    "services.title": "Professionelle Malerydelser i København og på Sjælland",
     "services.indoor.title": "Indendørs Maling",
-    "services.indoor.desc": "Professionel maling af vægge, lofter, træværk og paneler. Spartling, tapetsering og farverådgivning.",
+    "services.indoor.desc": "Professionel indendørs maling af vægge, lofter, døre, paneler og træværk i lejligheder, huse og erhvervslokaler. Vi tilbyder spartling, tapetsering, klargøring af overflader og farverådgivning til kunder i København, Ballerup, Roskilde og hele Sjælland.",
     "services.outdoor.title": "Udendørs Maling",
-    "services.outdoor.desc": "Facademaling, vinduer, døre, træbeskyttelse og vedligeholdelse af bygninger.",
+    "services.outdoor.desc": "Udendørs maling og facademaling af huse, villaer, rækkehuse og erhvervsbygninger. Vi udfører maling af facade, vinduer, døre, hegn og træværk samt træbeskyttelse og vedligeholdelse i København, Roskilde, Greve, Køge og hele Sjælland.",
     "services.commercial.title": "Erhvervsløsninger",
-    "services.commercial.desc": "Malerarbejde til kontorer, butikker, institutioner og virksomheder i hele Sjælland.",
+    "services.commercial.desc": "Professionelt malerarbejde til kontorer, butikker, institutioner, ejendomme og virksomheder i København, Frederiksberg, Ballerup, Lyngby og hele Sjælland.",
 
     "services.home.painting.title": "Indendørs & Udendørs Maling",
 "services.home.painting.desc": "Professionel maling af vægge, lofter, facader, vinduer og træværk til både boliger og erhverv.",
@@ -79,7 +79,7 @@ const translations = {
 
 
   "projects.1.title": "Maling af Lejlighed",
-  "projects.1.desc": "Indvendig maling af vægge og lofter med fokus på kvalitet, præcision og et flot slutresultat.",
+  "projects.1.desc": "Indvendig maling af lejlighed i København med maling af vægge, lofter og træværk samt spartling og klargøring af overflader.",
 
   "projects.2.title": "Forberedelse før Maling",
   "projects.2.desc": "Grundig afdækning og forberedelse af gulve og overflader for at sikre et professionelt resultat.",
@@ -116,7 +116,7 @@ const translations = {
     "testimonials.2.text": "Vi fik malet hele facaden på vores villa, og resultatet er virkelig flot. Arbejdet blev udført professionelt, og kommunikationen var nem hele vejen igennem. Kan varmt anbefales.",
 
     "why.title": "Hvorfor Vælge MAN MALER?",
-    "why.subtitle": "Vi er dedikerede til at levere det bedste malerarbejde i København, Ballerup og på hele Sjælland.",
+    "why.subtitle": "Vi leverer professionelt malerarbejde til private og erhverv i København, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve og hele Sjælland.",
     "why.experience.title": "Erfaring & Ekspertise",
     "why.experience.desc": "Mange års erfaring med professionelt malerarbejde til private og erhverv på Sjælland.",
     "why.quality.title": "Kvalitetsmaterialer",
@@ -156,7 +156,7 @@ const translations = {
 
 "about.area.title": "Dækningsområde",
 
-"about.area.desc": "Vi udfører malerarbejde og renoveringsopgaver i hele Danmark med særligt fokus på Sjælland og Hovedstadsområdet. Uanset projektets størrelse er vores mål altid det samme – et professionelt resultat, der holder.",
+"about.area.desc": "Vi udfører malerarbejde og renovering i København, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge, Hillerød, Helsingør, Næstved og resten af Sjælland.",
 "about.gallery.title": "Stemning fra vores arbejde",
 "about.gallery.desc": "Hos MANMALER er godt håndværk også gode mennesker. Vi værdsætter samarbejde, godt humør og et positivt arbejdsmiljø – fordi glade mennesker skaber de bedste resultater for vores kunder.",
     "contact.title": "Kontakt Os",
@@ -186,7 +186,7 @@ const translations = {
 "contact.success.button": "Send en ny besked",
 
     "footer.company": "MANMALER",
-    "footer.desc": "Professionel maler i København, Ballerup og på hele Sjælland. Kvalitetsmalerarbejde til private og erhverv.",
+    "footer.desc": "Professionel maler i København, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge og hele Sjælland. Vi udfører indendørs maling, udendørs maling, facademaling, spartling, renovering og erhvervsmaling.",
     "footer.contact": "Kontakt",
     "footer.address": "Adresse",
     "footer.follow": "Følg os",
@@ -279,7 +279,24 @@ const translations = {
 
 "legal.cookies.section6.title": "Kontakt",
 "legal.cookies.section6.text": "Hvis du har spørgsmål til vores brug af cookies, er du velkommen til at kontakte os:\n\nMAN MALER drives under Nordisk Renhed og Bygg ApS\nCVR: 45400018\nAdresse: Energivej 27, 2750 Ballerup\nEmail: info@manmaler.dk",
-  },
+  "seo.text1": "Leder du efter en professionel maler i København eller på Sjælland? MAN MALER tilbyder professionelt malerarbejde i København, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge, Hillerød, Helsingør og resten af Sjælland.",
+"seo.serviceAreas.title": "Professionel maler i København og på Sjælland",
+
+"seo.serviceAreas.text": "MAN MALER tilbyder professionelt malerarbejde i København, Frederiksberg, Ballerup, Herlev, Glostrup, Hvidovre, Rødovre, Taastrup, Albertslund, Lyngby, Gentofte, Roskilde, Greve, Køge, Hillerød, Helsingør, Næstved og resten af Sjælland. Vi udfører indendørs maling, udendørs maling, facademaling, renovering, spartling og erhvervsmaling for både private boliger og virksomheder.",
+
+"seo.services.title": "Vores maler- og renoveringsydelser",
+
+"seo.services.interior": "Maling af vægge, loftmaling, træværk, paneler, tapetsering, spartling og klargøring af overflader, dekorative malerteknikker, farverådgivning og professionel finish.",
+
+"seo.services.exterior": "Facademaling, maling af vinduer og døre, træbeskyttelse, tagmaling, maling af hegn, betonbehandling og rustbeskyttelse.",
+
+"seo.services.renovation": "Komplet boligrenovering, behandling af vandskader, skimmelbehandling, gulvbehandling, loftsrenovering, vådrumsbehandling og energirenovering.",
+
+"seo.services.commercial": "Kontormaling, butiksmaling, industriel maling, ejendomsvedligeholdelse, institutioner og større malerprojekter.",
+"seo.services.interiorTitle": "Indendørs maling",
+"seo.services.exteriorTitle": "Udendørs maling",
+"seo.services.renovationTitle": "Renovering",
+"seo.services.commercialTitle": "Erhvervsmaling"},
   en: {
     "nav.home": "Home",
     "nav.services": "Services",
@@ -288,18 +305,18 @@ const translations = {
     "nav.contact": "Contact",
     "nav.cta": "Get a quote",
 
-    "hero.title": "Professional Painter in Zealand",
-    "hero.subtitle": "Quality-conscious painting for private and commercial clients in Copenhagen, Ballerup, Roskilde and across Zealand. Indoor and outdoor painting with precision and care.",
+    "hero.title": "Professional Painter in Copenhagen and Across Zealand",
+    "hero.subtitle": "Professional painting company serving Copenhagen, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge and across Zealand. We provide interior painting, exterior painting, facade painting, renovation and commercial painting for apartments, houses and businesses.",
     "hero.cta": "Get a free quote",
     "hero.services": "See our services",
 
-    "services.title": "Our Services",
+    "services.title": "Professional Painting Services in Copenhagen and Zealand",
     "services.indoor.title": "Interior Painting",
-    "services.indoor.desc": "Professional painting of walls, ceilings, woodwork and panels. Filling, wallpapering and color consultation.",
+    "services.indoor.desc": "Professional interior painting of walls, ceilings, doors, woodwork and panels in apartments, houses and commercial spaces. We also provide surface preparation, filling, wallpapering and color consultation across Copenhagen and Zealand.",
     "services.outdoor.title": "Exterior Painting",
-    "services.outdoor.desc": "Facade painting, windows, doors, wood protection and building maintenance.",
+    "services.outdoor.desc": "Exterior painting and facade painting for houses, villas, townhouses and commercial buildings. We paint facades, windows, doors, fences and woodwork and provide wood protection services across Copenhagen and Zealand.",
     "services.commercial.title": "Commercial Solutions",
-    "services.commercial.desc": "Painting for offices, shops, institutions and businesses across Zealand.",
+    "services.commercial.desc": "Professional commercial painting for offices, retail stores, institutions and companies in Copenhagen, Frederiksberg, Ballerup, Lyngby and across Zealand.",
 "services.home.painting.title": "Interior & Exterior Painting",
 "services.home.painting.desc": "Professional painting of walls, ceilings, facades, windows and woodwork for homes and businesses.",
 
@@ -355,7 +372,7 @@ const translations = {
     "projects.subtitle": "See a selection of our latest work and get inspired.",
 
   "projects.1.title": "Apartment Painting",
-  "projects.1.desc": "Interior wall and ceiling painting completed with attention to quality, precision and a clean finish.",
+  "projects.1.desc": "Interior apartment painting project in Copenhagen including wall painting, ceiling painting and surface preparation.",
 
   "projects.2.title": "Room Preparation",
   "projects.2.desc": "Careful preparation of floors, walls and surfaces before painting to ensure a clean and professional result.",
@@ -389,7 +406,7 @@ const translations = {
     "testimonials.2.author": "Lars P., Roskilde",
 
     "why.title": "Why Choose MANMALER?",
-    "why.subtitle": "We are dedicated to delivering the best painting work in Copenhagen, Ballerup and across Zealand.",
+    "why.subtitle": "We deliver professional painting services for private homes and businesses in Copenhagen, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve and across Zealand.",
     "why.experience.title": "Experience & Expertise",
     "why.experience.desc": "Many years of experience with professional painting for private and commercial clients in Zealand.",
     "why.quality.title": "Quality Materials",
@@ -428,7 +445,7 @@ const translations = {
 
 "about.area.title": "Coverage Area",
 
-"about.area.desc": "We provide painting and renovation services across Denmark with a focus on Zealand and the Copenhagen region. No matter the project size, our goal is always the same — a professional result that lasts.",
+"about.area.desc": "We provide painting and renovation services in Copenhagen, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge, Hillerød, Helsingør, Næstved and across Zealand.",
 "about.gallery.title": "Moments From Our Work",
 "about.gallery.desc": "At MAN MALER we believe great craftsmanship also comes from great people. We value teamwork, positivity and a good working atmosphere because happy professionals create the best results for our clients.",
     "contact.title": "Contact Us",
@@ -458,7 +475,7 @@ const translations = {
 "contact.success.button": "Send another message",
 
     "footer.company": "MANMALER",
-    "footer.desc": "Professional painter in Copenhagen, Ballerup and across Zealand. Quality painting for private and commercial clients.",
+    "footer.desc": "Professional painter in Copenhagen, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge and across Zealand. We provide interior painting, exterior painting, facade painting, renovation and commercial painting services.",
     "footer.contact": "Contact",
     "footer.address": "Address",
     "footer.follow": "Follow us",
@@ -551,7 +568,25 @@ const translations = {
 
 "legal.cookies.section6.title": "Contact information",
 "legal.cookies.section6.text": "If you have any questions regarding our use of cookies, please feel free to contact us:\n\nMAN MALER is operated under Nordisk Renhed og Bygg ApS\nCVR: 45400018\nAddress: Energivej 27, 2750 Ballerup, Denmark\nEmail: info@manmaler.dk",
-  },
+  "seo.text1": "Looking for a professional painter in Copenhagen or Zealand? MAN MALER provides professional painting services in Copenhagen, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge, Hillerød and Helsingør.",
+"seo.serviceAreas.title": "Professional painter in Copenhagen and across Zealand",
+
+"seo.serviceAreas.text": "MAN MALER provides professional painting services in Copenhagen, Frederiksberg, Ballerup, Herlev, Glostrup, Hvidovre, Rødovre, Taastrup, Albertslund, Lyngby, Gentofte, Roskilde, Greve, Køge, Hillerød, Helsingør, Næstved and across Zealand. We offer interior painting, exterior painting, facade painting, renovation and commercial painting for homes and businesses.",
+
+"seo.services.title": "Our painting and renovation services",
+
+"seo.services.interior": "Wall painting in all colors, ceiling painting and treatment, woodwork and panels, wallpapering, filling and preparation, decorative painting techniques, color consultation and finishing touches.",
+
+"seo.services.exterior": "Facade painting, painting of windows and doors, wood protection, roof painting, fence painting, concrete treatment and rust protection.",
+
+"seo.services.renovation": "Complete home renovation, water damage treatment, mold treatment, floor treatment, ceiling renovation, wet room treatment and energy renovation.",
+
+"seo.services.commercial": "Office painting, retail painting, industrial painting, property maintenance, institutional painting and large commercial projects.",
+"seo.services.interiorTitle": "Interior Painting",
+"seo.services.exteriorTitle": "Exterior Painting",
+"seo.services.renovationTitle": "Renovation",
+"seo.services.commercialTitle": "Commercial Painting"
+},
 } as const;
 
 type TranslationKey = keyof typeof translations.da;

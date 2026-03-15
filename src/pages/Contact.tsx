@@ -3,6 +3,7 @@ import { useI18n } from "@/lib/i18n";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Mail, MapPin, Clock, CheckCircle, Instagram, Facebook, ChevronDown, X, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { Helmet } from "react-helmet-async";
 
 function TikTokIcon({ size = 20 }: { size?: number }) {
   return (
@@ -96,7 +97,52 @@ const handleSubmit = async (e: React.FormEvent) => {
   ];
 
   return (
-    <>
+<>
+<Helmet>
+
+<title>Kontakt Maler | Få et Gratis Tilbud | MAN MALER</title>
+
+<meta
+name="description"
+content="Kontakt MAN MALER og få et gratis tilbud på malerarbejde i København og på Sjælland. Indendørs maling, facademaling, renovering og erhvervsmaling."
+/>
+
+<meta
+name="keywords"
+content="kontakt maler, maler tilbud københavn, få tilbud maler, maler sjælland kontakt, malerfirma københavn"
+/>
+
+<meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="https://manmaler.dk/kontakt" />
+
+{/* OpenGraph */}
+
+<meta property="og:title" content="Kontakt MAN MALER | Få et Gratis Tilbud" />
+
+<meta
+property="og:description"
+content="Har du brug for en professionel maler? Kontakt MAN MALER i dag og få et gratis tilbud på malerarbejde."
+/>
+
+<meta property="og:type" content="website" />
+
+<meta property="og:url" content="https://manmaler.dk/kontakt" />
+
+<meta property="og:image" content="https://manmaler.dk/og-contact.jpg" />
+
+{/* Twitter */}
+
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:title" content="Kontakt MAN MALER | Gratis Malertilbud" />
+
+<meta
+name="twitter:description"
+content="Kontakt vores malerfirma i København og få et gratis tilbud."
+/>
+
+</Helmet>
       {/* HERO */}
       <section className="relative py-28 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 gradient-warm" />

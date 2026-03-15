@@ -6,6 +6,7 @@ import interiorImg from "@/assets/interior.png";
 import exteriorImg from "@/assets/exterior.png";
 import renovationImg from "@/assets/renovation.png";
 import commercialImg from "@/assets/commercial.png";
+import { Helmet } from "react-helmet-async";
 
 export default function Services() {
   const { t } = useI18n();
@@ -19,6 +20,54 @@ export default function Services() {
 
   return (
     <>
+<Helmet>
+
+<title>
+Maler Ydelser | Indendørs & Udendørs Maling | MAN MALER
+</title>
+
+<meta
+name="description"
+content="Professionelle malerydelser i København og på Sjælland. Indendørs maling, facademaling, renovering, træbeskyttelse og erhvervsmaling for boliger og virksomheder."
+/>
+
+<meta
+name="keywords"
+content="maler ydelser, indendørs maling, udendørs maling, facademaling, erhvervsmaling, maler københavn, maler sjælland, renovering"
+/>
+
+<meta name="robots" content="index, follow" />
+
+<link rel="canonical" href="https://manmaler.dk/ydelser" />
+
+{/* OpenGraph */}
+
+<meta property="og:title" content="Maler Ydelser | MAN MALER" />
+
+<meta
+property="og:description"
+content="Se vores professionelle malerydelser: indendørs maling, facademaling, renovering og erhvervsmaling i København og på Sjælland."
+/>
+
+<meta property="og:type" content="website" />
+
+<meta property="og:url" content="https://manmaler.dk/ydelser" />
+
+<meta property="og:image" content="https://manmaler.dk/og-image.jpg" />
+
+{/* Twitter */}
+
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="twitter:title" content="Maler Ydelser | MAN MALER" />
+
+<meta
+name="twitter:description"
+content="Professionelle malerydelser i København og på Sjælland."
+/>
+
+</Helmet>
+
       {/* HERO */}
       <section className="relative py-28 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 gradient-warm" />

@@ -10,7 +10,7 @@ import project2 from "@/assets/projects/p5.jpg";
 import project3 from "@/assets/projects/proj36.jpg";
 
 import video1 from "@/assets/projects/video1.mp4";
-import video2 from "@/assets/projects/video4.mp4";
+import video2 from "@/assets/projects/video3.mp4";
 import video3 from "@/assets/projects/video5.mp4";
 import { useState, useEffect } from "react";
 

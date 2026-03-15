@@ -17,6 +17,7 @@ import NotFound from "./pages/NotFound";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Cookies from "./pages/Cookies";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 const queryClient = new QueryClient();
 
@@ -25,36 +26,36 @@ const App = () => (
     <TooltipProvider>
       <Sonner />
 
-      <I18nProvider>
-        <BrowserRouter>
-          <div className="flex flex-col min-h-screen">
+<I18nProvider>
+  <BrowserRouter>
 
-            <Header />
+    <AnalyticsTracker />
 
-            <main className="flex flex-col flex-1">
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/ydelser" element={<Services />} />
-                <Route path="/referencer" element={<Projects />} />
-                <Route path="/om-os" element={<About />} />
-                <Route path="/kontakt" element={<Contact />} />
-                <Route path="/vilkar" element={<Terms />} />
-                <Route path="/privatliv" element={<Privacy />} />
-                <Route path="/cookies" element={<Cookies />} />
+    <div className="flex flex-col min-h-screen">
 
+      <Header />
 
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </main>
+      <main className="flex flex-col flex-1">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/ydelser" element={<Services />} />
+          <Route path="/referencer" element={<Projects />} />
+          <Route path="/om-os" element={<About />} />
+          <Route path="/kontakt" element={<Contact />} />
+          <Route path="/vilkar" element={<Terms />} />
+          <Route path="/privatliv" element={<Privacy />} />
+          <Route path="/cookies" element={<Cookies />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
 
-            <Footer />
+      <Footer />
 
-            {/* Cookie Banner appears on all pages */}
-            <CookieBanner />
+      <CookieBanner />
 
-          </div>
-        </BrowserRouter>
-      </I18nProvider>
+    </div>
+  </BrowserRouter>
+</I18nProvider>
 
     </TooltipProvider>
   </QueryClientProvider>

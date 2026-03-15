@@ -1,16 +1,23 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { loadGoogleAnalytics } from "@/lib/analytics";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
+
     if (!consent) setVisible(true);
+
+    if (consent === "accepted") {
+      loadGoogleAnalytics();
+    }
   }, []);
 
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "accepted");
+    loadGoogleAnalytics();
     setVisible(false);
   };
 

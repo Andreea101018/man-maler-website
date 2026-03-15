@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export default async function handler(req, res) {
+export default async function (req, res) {
 
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
@@ -13,32 +13,24 @@ export default async function handler(req, res) {
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT),
       secure: false,
+      requireTLS: true,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
-      connectionTimeout: 5000,
     });
-
-    await transporter.verify();
 
     await transporter.sendMail({
       from: `"Website Contact" <${process.env.SMTP_USER}>`,
       to: process.env.MAIL_TO,
       replyTo: email,
-      subject: `New contact request – ${services.join(", ")}`,
+      subject: `New contact request – ${services?.join(", ")}`,
       html: `
         <h3>New contact request</h3>
-
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Service:</strong> ${services.join(", ")}</p>
-
-        ${
-          message
-            ? `<p><strong>Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>`
-            : ""
-        }
+        <p><strong>Service:</strong> ${services?.join(", ")}</p>
+        <p><strong>Message:</strong><br/>${message}</p>
       `,
     });
 

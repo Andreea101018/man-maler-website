@@ -19,6 +19,7 @@ import NotFound from "./pages/NotFound";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Cookies from "./pages/Cookies";
+import ScrollToTop from "@/components/ScrollToTop";
 
 import AnalyticsTracker from "@/components/AnalyticsTracker";
 
@@ -32,7 +33,7 @@ const App = () => (
 
         <I18nProvider>
           <BrowserRouter>
-
+            <ScrollToTop />
             <AnalyticsTracker />
 
             <div className="flex flex-col min-h-screen">

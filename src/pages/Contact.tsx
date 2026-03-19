@@ -72,7 +72,17 @@ const handleSubmit = async (e: React.FormEvent) => {
       throw new Error("Failed to send email");
     }
 
-    setSent(true);
+
+
+// 🔥 Google Ads conversion tracking
+if (typeof window !== "undefined" && (window as any).gtag) {
+(window as any).gtag("event", "conversion", {
+  send_to: "AW-18018377910/conversion_event_request_quote",
+  event_callback: () => {},
+  event_timeout: 2000,
+});
+}
+setSent(true);
 
     setForm({
       name: "",

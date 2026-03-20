@@ -8,10 +8,10 @@ export default async function handler(req, res) {
 
   try {
 
-    const { name, email, services, message } = req.body;
+    const { name, email, phone, services, message } = req.body;
 
     // Basic validation
-    if (!name || !email || !message || !services?.length) {
+    if (!name || !email || !phone || !message || !services?.length) {
       return res.status(400).json({
         success: false,
         error: "Missing required fields"
@@ -52,7 +52,10 @@ export default async function handler(req, res) {
           <strong>Email:</strong> 
           <a href="mailto:${email}" style="color:#2563eb">${email}</a>
         </p>
-
+<p>
+  <strong>Phone:</strong> 
+  <a href="tel:${phone}" style="color:#2563eb">${phone}</a>
+</p>
         <h3 style="margin-bottom:5px;margin-top:20px;">Requested Services</h3>
 
         <ul>

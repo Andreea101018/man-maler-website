@@ -184,7 +184,7 @@ const translations = {
     "contact.success.title": "Tak for din henvendelse!",
 "contact.success.description": "Vi har modtaget din besked og vender typisk tilbage inden for få timer.",
 "contact.success.button": "Send en ny besked",
-
+"contact.phone": "Telefonnummer",
     "footer.company": "MANMALER",
     "footer.desc": "Professionel maler i København, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge og hele Sjælland. Vi udfører indendørs maling, udendørs maling, facademaling, spartling, renovering og erhvervsmaling.",
     "footer.contact": "Kontakt",
@@ -473,7 +473,7 @@ const translations = {
     "contact.success.title": "Thank you for your message!",
 "contact.success.description": "Your inquiry has been received. We usually reply within a few hours.",
 "contact.success.button": "Send another message",
-
+"contact.phone": "Phone number",
     "footer.company": "MANMALER",
     "footer.desc": "Professional painter in Copenhagen, Ballerup, Roskilde, Hvidovre, Herlev, Glostrup, Lyngby, Gentofte, Greve, Køge and across Zealand. We provide interior painting, exterior painting, facade painting, renovation and commercial painting services.",
     "footer.contact": "Contact",

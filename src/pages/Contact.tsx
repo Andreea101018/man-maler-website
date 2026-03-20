@@ -22,7 +22,7 @@ const SERVICE_KEYS = [
 
 export default function Contact() {
   const { t } = useI18n();
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "",phone: "", message: "" });
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [sending, setSending] = useState(false);
@@ -45,7 +45,25 @@ const [sent, setSent] = useState(false);
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
-  if (!form.name.trim() || !form.email.trim() || !form.message.trim()) return;
+if (!form.name.trim()) {
+  toast.error("Indtast venligst dit navn");
+  return;
+}
+
+if (!form.email.trim()) {
+  toast.error("Indtast venligst din email");
+  return;
+}
+
+if (!form.phone.trim()) {
+  toast.error("Indtast venligst dit telefonnummer"); // ✅ HERE
+  return;
+}
+
+if (!form.message.trim()) {
+  toast.error("Indtast venligst en besked");
+  return;
+}
 
   if (selectedServices.length === 0) {
     toast.error(t("contact.services.error" as any));
@@ -63,6 +81,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       body: JSON.stringify({
         name: form.name,
         email: form.email,
+        phone: form.phone, // ✅ NEW
         message: form.message,
         services: selectedServices,
       }),
@@ -88,6 +107,7 @@ setSent(true);
       name: "",
       email: "",
       message: "",
+      phone: "",
     });
 
     setSelectedServices([]);
@@ -230,7 +250,21 @@ content="Kontakt vores malerfirma i København og få et gratis tilbud."
                     className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:outline-none transition"
                   />
                 </div>
-
+<div>
+  <label className="block text-sm font-medium mb-2 text-foreground">
+    {t("contact.phone" as any)}
+  </label>
+  <input
+    type="tel"
+    required
+    maxLength={20}
+    pattern="[0-9+ ]{8,15}"
+    inputMode="tel"
+    value={form.phone}
+    onChange={(e) => setForm({ ...form, phone: e.target.value })}
+    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:outline-none transition"
+  />
+</div>
                 {/* Services Multi-Select Dropdown */}
                 <div>
                   <label className="block text-sm font-medium mb-2 text-foreground">
